@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootLockRE</title>
+    <link rel="stylesheet" href="Subscribe-style.css">
+    <script defer src="subscribe.js"></script>
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="container-navbar">
+        <input type="checkbox" class="toggle-menu">
+        <div class="hamburger"></div>
+
+        <ul class="ul-navbar">
+            <li class="li-navbar"><a href="Subscribe.html">Subscribe</a></li>
+            <li class="li-navbar"><a href="Shoes.html">Shoes</a></li>
+            <a href="Home.html"><img src="Assets/Logo.jpg" class="logo-jpg"></a>
+            <li class="li-navbar-home"><a href="Home.html">Home</a></li>
+            <li class="li-navbar"><a href="About Us.html">About Us</a></li>
+            <li class="li-navbar"><a href="Events.html">Events</a></li>
+        </ul>
+    </div>
+    <!-- NAVBAR SELESAI -->
+
+    <div class="text-SUBSCRIBE">SUBSCRIBE</div>
+
+    <div class="container-subscribe">
+        <div class="container-input">
+            <input type="text" name="name" id="name" placeholder="Full name" required>
+        </div>
+        <div class="container-input">
+            <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="container-input">
+            <!-- <input type="country" name="country" id="country" placeholder="Country" required> -->
+            <select name="country" id="country" aria-sort="ascending">
+            </select>
+        </div>
+        <div class="container-input">
+            <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
+        </div>
+        <div class="container-tac">
+            <div class="text-TAC">Terms And Condition</div>
+            <div class="text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div>
+        <div class="container-acc">
+            <input type="checkbox" name="cb" id="cb">I agree to the FootLockRE Terms
+        </div>
+        <div class="container-btn">
+            <button type="submit" id="btn" onclick=checkInput()>Subscribe</button>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-footer">
+        <div class="container-explore">
+            <ul class="ul-faq">
+                <li>FAQ</li>
+                <li>Privacy Policy</li>
+                <li>Payment Confirmatoin</li>
+                <li>Buying & Selling Guide</li>
+            </ul>
+            <div class="container-account">
+                Explore us on Instagram!
+                <div class="container-insta-icon">
+                    <img class = "insta-icon" src="Assets/instagram-with-circle.256x256.png" alt="">
+                    FootLockRE
+                </div class="">
+            </div>
+            <div class="container-keepintouch">
+                Keep in touch with us!
+                <div class="container-social-icon">
+                    <img class = "image-social-icon" src="Assets/instagram-with-circle.256x256.png" alt="">
+                    <img class = "image-social-icon" src="Assets/youtube-with-circle.256x256.png" alt="">
+                    <img class = "image-social-icon" src="Assets/sharp-facebook.svg" alt="">
+                    <img class = "image-social-icon" src="Assets/logo-tiktok.444x512.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-register">
+            Registered under PT. Putra Taruna Losari
+        </div>
+    </div>
+    <!-- FOOTER END -->
+</body>
+
+</html>

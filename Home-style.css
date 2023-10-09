@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+
+*, html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.ul-navbar{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.li-navbar:hover{
+    font-size: 150%;
+    transition: 0.3s;
+    text-shadow: 10px 10px 10px #636363;
+}
+
+.ul-faq{
+    list-style-type: none;
+}
+
+.logo-jpg{
+    width: 264px;
+    height: 210px;
+    border-radius: 100%;
+}
+
+.logo-jpg:hover{
+    filter: invert(100%);
+    transition: 0.7s;
+}
+
+.container-text-banner{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-top: 29px;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 430px;
+    transition: all 1.2s ease-out;
+}
+
+.header-banner{
+    font-family: 'Odibee Sans', cursive;
+    font-size: 128px;
+    text-shadow: 10px 10px 10px #636363;
+    transition: all 1.2s ease-out;
+}
+
+.container-text-footer{
+    color: white;
+    font-family: 'Fugaz One', cursive;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.container-image{
+    display: flex;
+    justify-content: center;
+}
+
+.image-banner{
+    width: 100%;
+    height: 739px;
+    object-fit: cover;
+}
+
+.container-explore{
+    width: 1440px;
+    height: 280px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-register{
+    height: 64px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container-account{
+    margin: 90px;
+}
+
+.container-insta-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.insta-icon{
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.container-social-icon{
+    margin-top: 20px;
+}
+
+.image-social-icon{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.li-navbar-home{
+    display: none;
+}
+
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.hamburger:before,
+.hamburger::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.hamburger:before{
+    top: -10px;
+    width: 20px;
+}
+.hamburger:after{
+    top: 10px;
+    width: 25px;
+}
+
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger,
+.toggle-menu{
+    display: none;
+}
+
+.container-navbar input:checked ~ .hamburger{
+    background: transparent;
+}
+.container-navbar input:checked ~ .hamburger:before{
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+.container-navbar input:checked ~ .hamburger:after{
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.container-navbar input:checked ~ .ul-navbar{
+    right: 0;
+}
+
+@media screen and (max-width: 768px){
+    .hamburger,
+    .toggle-menu{
+        display: block;
+    }
+
+    .ul-navbar{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: black;
+        width: 250px;
+        height: 100%;
+        padding-top: 65px;
+        transition: 0.3s;
+    }
+
+    .logo-jpg{
+        display: none;
+    }
+
+    .li-navbar-home{
+        display: block;
+    }
+
+    .li-navbar-home:hover{
+        transition: 0.3s;
+        text-shadow: 10px 10px 10px #636363;
+    }
+
+    .ul-navbar li{
+        width: 100%;
+        box-shadow: 0 1px 0 #666666 inset;
+    }
+
+    .ul-navbar li:hover{
+        box-shadow: 0 5px 0 white;
+    }
+
+    .ul-navbar li a,
+    .ul-navbar li a:hover{
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .container-navbar{
+        margin: 31px;
+    }
+
+    .image-banner{
+        height: inherit;
+    }
+
+    .container-register{
+        font-size: 160%;
+        height: 100%;
+    }
+
+    .container-text-banner{
+        font-size:160%;
+    }
+
+    .header-banner{
+        font-size: 300%;
+    }
+
+    .container-explore{
+        font-size: 96%;
+        height: 90%;
+    }
+
+    .container-text-footer{
+        font-size: 220%;
+    }
+
+    .container-account{
+        margin: 5%;
+    }
+}
